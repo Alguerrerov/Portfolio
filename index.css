@@ -5,12 +5,14 @@ body{
 
 header{
     background-color: #333;
-    color: aliceblue;
+    color: #f0f8ff;
     padding: 10px;
 }
 
 nav ul{
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav li{
