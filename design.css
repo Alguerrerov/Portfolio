@@ -14,17 +14,19 @@ main{
   position: relative;
   width: 100%;
   height: 110dvh;
-  
-}
-
-.slide{
   display: flex;
-  flex-wrap: wrap;
+  background-image: url(https://hsr.hoyoverse.com/_nuxt/img/pc-normal-bg.3870807.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+/*Imagen*/
 .imagen{
   display: flex;
   height: 100%;
+  flex-wrap: wrap;
 }
 
 .imagen img{
@@ -33,13 +35,103 @@ main{
   width: auto;  
 }
 
+/*Contenido*/
+
+.slider{
+  overflow: scroll;
+  overflow-y: auto; 
+}
+
 .titulo{
-  padding-top: 10%;
+  margin-top: 10%;
+  padding-right: 20%;
 }
 
 .titulo h1{
-  padding-left: 11%;
+  padding-left: 4%;
   color:#fdf4be;
+  font-size: 150%;
+}
+
+.titulo h3{
+  padding-left: 5%;
+  color:#fdf4be;
+  font-size: 95%;
+}
+
+.titulo p{
+  padding-left: 5%;
+  color:#ffff;
+  font-size: 75%;
+}
+
+.contacto h6{
+  padding-left: 5%;
+  color:#fdf4be;
+  font-size: 75%;
+}
+
+.contacto .menuredes{
+  margin-top: -35px;
+}
+
+.menuredes li{
+  list-style: none;
+  display: inline-flex;
+  margin-right: 10%;  
+}
+
+.menuredes li img{
+  height: 50px;
+  width: 50px !important;
+  border-radius: 50%;
+  cursor: pointer;  
+}
+
+.menuredes a{
+  width: 180px;
+  height: 48px;
+  background: #000;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 12px 12px 75px;
+  max-width: 100%;
+  position: relative;
+  white-space: nowrap;
+  transition: all 0.3s ease-in;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.Portfolio::before{
+  content: '';
+  position: absolute;
+  background: #000 url(https://ucompensar.edu.co/wp-content/themes/wp-compensar/assets/img/down-arrow.svg) no-repeat center;
+  width: 56px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  top: 0;
+  left: 0;
+  cursor:pointer;  
+}
+
+.item1:hover{
+  transform: translateY(-5%);
+}
+
+.Portfolio:hover{
+  transform: translateY(-10%);
+}
+
+img{
+  vertical-align: middle;
 }
 
 .slider input{
@@ -47,25 +139,199 @@ main{
   display: none;
 }
 
-.botones{
-  position: absolute;
-  width: 100%;
+/*slide 2*/
+
+.titulo2{
+  margin-top: 10%;
+  padding-right: 20%;
+}
+
+.titulo2 h1{
+  padding-left: 4%;
+  color:#fdf4be;
+  font-size: 150%;
+}
+
+.cartas{
   display: flex;
-  justify-content: center;
-  bottom: 50px;
-  gap: 10px;
+  max-width: 100%;
+  max-width: 800px;
 }
 
-.botones label {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 70%;
+.diseño, .programas{
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
   cursor: pointer;
-  transition: 300ms ease-in-out;
 }
 
-.botones label:hover{
-  scale: 1.2;
-  opacity: 1;
+.diseño:hover, .programas:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
+
+.cartas img{
+  width: 150%;
+  height: 210px;
+  margin-left: -18%;
+  margin-top: -15%;
+}
+
+.relleno h3{
+  text-align: center;
+  font-size: 50px;
+  margin-top: -5%;
+}
+
+.relleno p{
+  text-align: center;
+  font-size: 25px;
+  margin-top: -10%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.relleno a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color:#000;
+  border: 1px solid #111718;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.relleno a:hover{
+  background-color: #000;
+  color:#fff;  
+}
+
+
+
+
+/*slide 3*/
+
+.titulo3{
+  margin-top: 10%;
+  padding-right: 20%;
+}
+
+.titulo3 h1{
+  padding-left: 4%;
+  color:#fdf4be;
+  font-size: 150%;
+}
+
+.listado a{
+  cursor:pointer;
+}
+
+.listado a{
+  cursor:pointer;
+}
+
+.recuadro{
+  display: flex;
+  width:22rem;
+  height: 2.68rem;
+  background: url(https://hsr.hoyoverse.com/_nuxt/img/news-line-item-bg.d3705bf.png);
+  background-size: 22rem 2.5rem;
+  background-position: center;
+  margin-bottom: 1rem;
+  background-repeat: no-repeat;
+  
+}
+
+.recuadro:hover{
+  transform: translateY(-5%);
+}
+
+
+.imgizq{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  margin-left: 1rem;
+}
+
+.imgizq img{
+  width: 100%;
+}
+
+.list3 img{
+  width: 150px;
+  margin-left: 0.8rem;
+}
+
+.textder h3{  
+  color:#fff;
+  margin-left: 2.2rem;
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
+}
+
+.textder h6{
+  color:#fff;
+  margin-left: 2.2rem;
+  margin-top: -0.6rem;
+  font-size: 0.5rem;
+}
+
+.textder p{
+  color:#fff;
+  margin-left: 2.2rem;
+  margin-top: -1rem;
+  font-size: 0.5rem;
+}
+
+/*slide 4*/
+
+.titulo4{
+  margin-top: 10%;
+  padding-right: 20%;
+}
+
+.titulo4 h1{
+  padding-left: 4%;
+  color:#fdf4be;
+  font-size: 150%;
+}
+
+.contenido4{
+  padding-left: 5%;
+}
+
+.habilidades{
+  display: flex;  
+}
+
+.habilidad{
+  text-align: center;
+  padding-right: 5%;  
+}
+
+.habilidad h3{
+  font-size: 40px;
+  color:#fdf4be;
+}
+
+.habilidad p{
+  font-size: 25px;
+  color: #fff;
+  margin-top: 5%;  
+}
+/*
+.contenido4 p{
+  padding-top: 0.3%;
+}
+
