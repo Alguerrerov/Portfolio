@@ -214,9 +214,6 @@ img{
   color:#fff;  
 }
 
-
-
-
 /*slide 3*/
 
 .titulo3{
@@ -234,10 +231,6 @@ img{
   cursor:pointer;
 }
 
-.listado a{
-  cursor:pointer;
-}
-
 .recuadro{
   display: flex;
   width:22rem;
@@ -246,14 +239,12 @@ img{
   background-size: 22rem 2.5rem;
   background-position: center;
   margin-bottom: 1rem;
-  background-repeat: no-repeat;
-  
+  background-repeat: no-repeat;  
 }
 
 .recuadro:hover{
   transform: translateY(-5%);
 }
-
 
 .imgizq{
   display: flex;
@@ -330,8 +321,3 @@ img{
   color: #fff;
   margin-top: 5%;  
 }
-/*
-.contenido4 p{
-  padding-top: 0.3%;
-}
-
